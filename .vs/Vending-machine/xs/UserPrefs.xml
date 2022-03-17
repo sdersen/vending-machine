@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{30C58D79-176C-44F9-834C-97836A6D1611}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Vending-machine/Program.cs">
+    <Files>
+      <File FileName="Vending-machine/Machine.cs" Line="9" Column="1" />
+      <File FileName="Vending-machine/Movie.cs" Line="6" Column="2" />
+      <File FileName="Vending-machine/Program.cs" Line="26" Column="34" />
+      <File FileName="Vending-machine/Inventory.cs" Line="5" Column="32" />
+      <File FileName="Vending-machine/Person.cs" Line="5" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Vending-machine" expanded="True">
+            <Node name="Vending-machine" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Vending-machine PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

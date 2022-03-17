@@ -1,0 +1,15 @@
+/Users/sofiadersen/Desktop/WU21/github/vending-machine/Vending-machine/bin/Debug/net6.0/Vending-machine
+/Users/sofiadersen/Desktop/WU21/github/vending-machine/Vending-machine/bin/Debug/net6.0/Vending-machine.deps.json
+/Users/sofiadersen/Desktop/WU21/github/vending-machine/Vending-machine/bin/Debug/net6.0/Vending-machine.runtimeconfig.json
+/Users/sofiadersen/Desktop/WU21/github/vending-machine/Vending-machine/bin/Debug/net6.0/Vending-machine.dll
+/Users/sofiadersen/Desktop/WU21/github/vending-machine/Vending-machine/bin/Debug/net6.0/ref/Vending-machine.dll
+/Users/sofiadersen/Desktop/WU21/github/vending-machine/Vending-machine/bin/Debug/net6.0/Vending-machine.pdb
+/Users/sofiadersen/Desktop/WU21/github/vending-machine/Vending-machine/obj/Debug/net6.0/Vending-machine.csproj.AssemblyReference.cache
+/Users/sofiadersen/Desktop/WU21/github/vending-machine/Vending-machine/obj/Debug/net6.0/Vending-machine.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sofiadersen/Desktop/WU21/github/vending-machine/Vending-machine/obj/Debug/net6.0/Vending-machine.AssemblyInfoInputs.cache
+/Users/sofiadersen/Desktop/WU21/github/vending-machine/Vending-machine/obj/Debug/net6.0/Vending-machine.AssemblyInfo.cs
+/Users/sofiadersen/Desktop/WU21/github/vending-machine/Vending-machine/obj/Debug/net6.0/Vending-machine.csproj.CoreCompileInputs.cache
+/Users/sofiadersen/Desktop/WU21/github/vending-machine/Vending-machine/obj/Debug/net6.0/Vending-machine.dll
+/Users/sofiadersen/Desktop/WU21/github/vending-machine/Vending-machine/obj/Debug/net6.0/ref/Vending-machine.dll
+/Users/sofiadersen/Desktop/WU21/github/vending-machine/Vending-machine/obj/Debug/net6.0/Vending-machine.pdb
+/Users/sofiadersen/Desktop/WU21/github/vending-machine/Vending-machine/obj/Debug/net6.0/Vending-machine.genruntimeconfig.cache
