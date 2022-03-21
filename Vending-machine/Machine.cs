@@ -2,6 +2,7 @@
 {
 
     //Kolla varför stock contoll inte funkar.
+    //Ska Inventory och Person ha constructor?
 
     Inventory pepsi = new Inventory()
     {
@@ -19,9 +20,23 @@
     };
     Inventory hubbabubba = new Inventory()
     {
-        Name = "hubbabubba",
+        Name = "Hubbabubba",
         Price = 5,
         Id = 3,
+        AmountInStock = 1
+    };
+    Inventory Fanta = new Inventory()
+    {
+        Name = "Fanta",
+        Price = 20,
+        Id = 4,
+        AmountInStock = 1
+    };
+    Inventory Chips = new Inventory()
+    {
+        Name = "Chips",
+        Price = 25,
+        Id = 5,
         AmountInStock = 1
     };
 
@@ -35,11 +50,12 @@
 
         while (!keepRunning)
         {
-            Console.WriteLine($"*** You have {costumer.Money}:- ***");
-            Console.Write("Choose your product by id");
-            Console.WriteLine($"{pepsi.Id} In stock {pepsi.AmountInStock}------------ {pepsi.Name} {pepsi.Price}:-");
-            Console.WriteLine($"{Kexchoklad.Id} In stock {Kexchoklad.AmountInStock} ------------ {Kexchoklad.Name} {Kexchoklad.Price}:-");
-            Console.WriteLine($"{hubbabubba.Id} In stock {hubbabubba.AmountInStock} ------------ {hubbabubba.Name} {hubbabubba.Price}:-");
+            Console.WriteLine($"*** You have enterd {costumer.Money}:- ***");
+            Console.WriteLine("Choose your product by id");
+            Console.WriteLine($"#{pepsi.Id} In stock {pepsi.AmountInStock}------------- {pepsi.Name} {pepsi.Price}:-");
+            Console.WriteLine($"#{Kexchoklad.Id} In stock {Kexchoklad.AmountInStock} ------------ {Kexchoklad.Name} {Kexchoklad.Price}:-");
+            Console.WriteLine($"#{hubbabubba.Id} In stock {hubbabubba.AmountInStock} ------------ {hubbabubba.Name} {hubbabubba.Price}:-");
+            Console.WriteLine("");
             Console.WriteLine("Enter quit to exit.");
             Console.WriteLine("Enter add to add money.");
 
@@ -95,12 +111,13 @@
         }
         if (price == money)
         {
+            Console.WriteLine($"Here is your {name.Name}");
             Console.WriteLine("Welcome back!");
-
         }
         if (price < money)
         {
             int change = money - price;
+            Console.WriteLine($"Here is your {name.Name}");
             Console.WriteLine($"You change is:{change}:-");
             Console.WriteLine("Welcome back!");
         }
@@ -125,7 +142,7 @@
             }
             else if (chioce > 100)
             {
-                Console.WriteLine("Sorry maximum number to enter is 100:-");
+                Console.WriteLine("Sorry maximum amount to enter is 100:-");
                 continue;
             }
 
