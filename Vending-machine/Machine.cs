@@ -1,44 +1,10 @@
 ﻿class Machine
 {
-
-    //Kolla varför stock contoll inte funkar.
-    //Ska Inventory och Person ha constructor?
-
-    Inventory pepsi = new Inventory()
-    {
-        Name = "pepsi",
-        Price = 20,
-        Id = 1,
-        AmountInStock = 1
-    };
-    Inventory Kexchoklad = new Inventory()
-    {
-        Name = "kexchoklad",
-        Price = 10,
-        Id = 2,
-        AmountInStock = 2
-    };
-    Inventory hubbabubba = new Inventory()
-    {
-        Name = "Hubbabubba",
-        Price = 5,
-        Id = 3,
-        AmountInStock = 1
-    };
-    Inventory Fanta = new Inventory()
-    {
-        Name = "Fanta",
-        Price = 20,
-        Id = 4,
-        AmountInStock = 1
-    };
-    Inventory Chips = new Inventory()
-    {
-        Name = "Chips",
-        Price = 25,
-        Id = 5,
-        AmountInStock = 1
-    };
+    Inventory pepsi = new Inventory("Pepsi", 20, 1, 2);
+    Inventory Kexchoklad = new Inventory("Kexchoklad", 10, 2, 2);
+    Inventory hubbabubba = new Inventory("Hubbabubba", 5, 3, 1);
+    Inventory Fanta = new Inventory("Fanta", 20, 4, 1);
+    Inventory Chips = new Inventory("Chips", 25, 5, 1);
 
     Person costumer = new Person(20);
 
@@ -55,6 +21,8 @@
             Console.WriteLine($"#{pepsi.Id} In stock {pepsi.AmountInStock}------------- {pepsi.Name} {pepsi.Price}:-");
             Console.WriteLine($"#{Kexchoklad.Id} In stock {Kexchoklad.AmountInStock} ------------ {Kexchoklad.Name} {Kexchoklad.Price}:-");
             Console.WriteLine($"#{hubbabubba.Id} In stock {hubbabubba.AmountInStock} ------------ {hubbabubba.Name} {hubbabubba.Price}:-");
+            Console.WriteLine($"#{Fanta.Id} In stock {Fanta.AmountInStock} ------------ {Fanta.Name} {Fanta.Price}:-");
+            Console.WriteLine($"#{Chips.Id} In stock {Chips.AmountInStock} ------------ {Chips.Name} {Chips.Price}:-");
             Console.WriteLine("");
             Console.WriteLine("Enter quit to exit.");
             Console.WriteLine("Enter add to add money.");
@@ -72,7 +40,7 @@
                     Add();
                     continue;
                 }
-                Console.WriteLine("Please enter a numer or valid command.");
+                Console.WriteLine("Please enter a number or valid command.");
                 continue;
             }
 
@@ -92,10 +60,24 @@
             }
             else if (chioce == 3)
             {
-                if (!CheckStock(pepsi.AmountInStock))
+                if (!CheckStock(hubbabubba.AmountInStock))
                     continue;
 
                 Pay(hubbabubba.Price, hubbabubba.AmountInStock, hubbabubba);
+            }
+            else if (chioce == 4)
+            {
+                if (!CheckStock(Fanta.AmountInStock))
+                    continue;
+
+                Pay(Fanta.Price, Fanta.AmountInStock, Fanta);
+            }
+            else if (chioce == 5)
+            {
+                if (!CheckStock(pepsi.AmountInStock))
+                    continue;
+
+                Pay(Chips.Price, Chips.AmountInStock, Chips);
             }
         }
     }
@@ -153,7 +135,7 @@
 
     private bool CheckStock(int amount)
     {
-        if (amount <= 1)
+        if (amount >= 1)
         {
             return true;
         }
