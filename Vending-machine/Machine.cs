@@ -16,13 +16,14 @@
 
         while (!keepRunning)
         {
-            Console.WriteLine($"*** You have enterd {costumer.Money}:- ***");
+            Console.WriteLine($"*** You have {costumer.Money}:- ***");
+            Console.WriteLine("");
             Console.WriteLine("Choose your product by id");
-            Console.WriteLine($"#{pepsi.Id} In stock {pepsi.AmountInStock}------------- {pepsi.Name} {pepsi.Price}:-");
-            Console.WriteLine($"#{Kexchoklad.Id} In stock {Kexchoklad.AmountInStock} ------------ {Kexchoklad.Name} {Kexchoklad.Price}:-");
-            Console.WriteLine($"#{hubbabubba.Id} In stock {hubbabubba.AmountInStock} ------------ {hubbabubba.Name} {hubbabubba.Price}:-");
-            Console.WriteLine($"#{Fanta.Id} In stock {Fanta.AmountInStock} ------------ {Fanta.Name} {Fanta.Price}:-");
-            Console.WriteLine($"#{Chips.Id} In stock {Chips.AmountInStock} ------------ {Chips.Name} {Chips.Price}:-");
+            Console.WriteLine($"#{pepsi.Id} ------------ {pepsi.Name} {pepsi.Price}:-");
+            Console.WriteLine($"#{Kexchoklad.Id} ------------ {Kexchoklad.Name} {Kexchoklad.Price}:-");
+            Console.WriteLine($"#{hubbabubba.Id} ------------ {hubbabubba.Name} {hubbabubba.Price}:-");
+            Console.WriteLine($"#{Fanta.Id} ------------ {Fanta.Name} {Fanta.Price}:-");
+            Console.WriteLine($"#{Chips.Id} ------------ {Chips.Name} {Chips.Price}:-");
             Console.WriteLine("");
             Console.WriteLine("Enter quit to exit.");
             Console.WriteLine("Enter add to add money.");
@@ -105,6 +106,7 @@
         }
         costumer.Money = costumer.Money - price;
         name.AmountInStock = name.AmountInStock - 1;
+        
     }
 
     private void Add()
